@@ -7,7 +7,7 @@ This Script Also Has Optional [ox_target](https://github.com/overextended/ox_tar
 
 ## Preview
 
-[![preview](https://cdn.discordapp.com/attachments/836342197565521960/1062511177218928661/image.png)](https://streamable.com/e/woxpwq)
+[![preview](https://cdn.discordapp.com/attachments/836342197565521960/1062511177218928661/image.png)](https://streamable.com/hfowqm)
 
 ## Notice
 
