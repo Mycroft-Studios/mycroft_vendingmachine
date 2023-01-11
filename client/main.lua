@@ -18,11 +18,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.]]
+
 function Interact(Model, Object)
+    -- Function Based upon: https://github.com/smallo92/xnVending
     ESX.TriggerServerCallback("vending:canBuyDink", function(canBuy)
         if canBuy then
             local ped = ESX.PlayerData.ped
             local position = GetOffsetFromEntityInWorldCoords(Object, 0.0, -0.97, 0.05)
+           
             TaskTurnPedToFaceEntity(ped, Object, -1)
             RequestAnimDict(Config.DispenseDict[1])
 
