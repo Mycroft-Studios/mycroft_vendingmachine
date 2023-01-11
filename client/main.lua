@@ -94,12 +94,12 @@ CreateThread(function()
     if Config.oxTarget then
         for i=1, #(Config.Models) do
             local options = {
-                {
+               {
                     name = Config.Models[i].model..'-vend',
-                    icon = 'fa-solid fa-road',
+                    icon = 'fa-solid fa-whiskey-glass',
                     label = Config.Models[i].interactionLabel,
-                    onSelect = function(entity)
-                        Interact(i, entity)
+                    onSelect = function(data)
+                        Interact(i, data.entity)
                     end
                 },
                 distance = 1.0
