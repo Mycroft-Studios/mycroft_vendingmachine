@@ -98,11 +98,11 @@ CreateThread(function()
                     name = Config.Models[i].model..'-vend',
                     icon = 'fa-solid fa-whiskey-glass',
                     label = Config.Models[i].interactionLabel,
+                    distance = 1.0,
                     onSelect = function(data)
                         Interact(i, data.entity)
                     end
                 },
-                distance = 1.0
             }
             exports.ox_target:addModel(Config.Models[i].model, options)
         end
